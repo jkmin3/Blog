@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joshua K. Min</title>
+    <link>/</link>
+    <description>Recent content on Joshua K. Min</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EDA on Amazon Books</title>
+      <link>/posts/eda/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eda/</guid>
+      <description>Data The data I have loaded in is called Amazon’s Top 50 Selling Books from 2009-2019. Here is a look at the data.
+## Rows: 550 ## Columns: 7 ## $ Name &amp;lt;chr&amp;gt; &amp;quot;10-Day Green Smoothie Cleanse&amp;quot;, &amp;quot;11/22/63: A Novel&amp;quot;, &amp;quot;1… ## $ Author &amp;lt;chr&amp;gt; &amp;quot;JJ Smith&amp;quot;, &amp;quot;Stephen King&amp;quot;, &amp;quot;Jordan B. Peterson&amp;quot;, &amp;quot;Georg… ## $ `User Rating` &amp;lt;dbl&amp;gt; 4.7, 4.6, 4.7, 4.7, 4.8, 4.4, 4.7, 4.7, 4.7, 4.6, 4.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/posts/resume/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resume/</guid>
+      <description>Download Resume Here Download</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning/ANN (Artificial Neural Network</title>
+      <link>/projects/ann/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/ann/</guid>
+      <description>Projects using Deep Learning Coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Fetus Health Classification</title>
+      <link>/projects/fetus_health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/fetus_health/</guid>
+      <description>Fetus Health Dataset This dataset contained a variety of features on newborns and it had its classification of 1-Normal, 2-Suspect, 3-Pathological.
+Description I used many different models with scikit-learn to predict the outcome of the health of a fetus and ended up using a random forest. I got a result of a 94% accurate model using GridSearchCV to get the best parameters. The only problem is that the grid search take a while, so play around with it.</description>
+    </item>
+    
+    <item>
+      <title>Image Processing</title>
+      <link>/projects/imgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/imgs/</guid>
+      <description>Projects using Image Processing Coming soon!</description>
+    </item>
+    
+    <item>
+      <title>League of Legends</title>
+      <link>/projects/league/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/league/</guid>
+      <description>Description League of Legends is a team-based strategy game where two teams that consist of five champions fight each other to destroy each other&amp;rsquo;s base while defending their own. There are many ways to get an advantage on your opponent and with all of this data collected on games, I was able to achieve a 73 percent success rate of predicting the game&amp;rsquo;s outcomes correctly using logistic regression.
+Click here for the Data</description>
+    </item>
+    
+    <item>
+      <title>Life Expectancy</title>
+      <link>/projects/life/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/life/</guid>
+      <description>Description I used the dataset below to predict the life expectancy of different countries. Using linear regression, I have found out that it is very important for countries to be abundant in income composition of resources and have a good school system. This means that if more people share the wealth, the overall life expectancy should go up in theory.
+Click here for the Data
+Click here for the Source Code</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/projects/machine_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/machine_learning/</guid>
+      <description>Projects using Machine Learning Fetus Health Classification Predicted Outcome of League of Legends Game Predicted Life Expectancy of Countries Visualized Data Through a Game</description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>/projects/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/email/</guid>
+      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
+The dataset is here:
+Link Here</description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>/projects/nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/nlp/</guid>
+      <description>Projects using NLP Spam or Ham emails</description>
+    </item>
+    
+    <item>
+      <title>Pygame</title>
+      <link>/projects/pygame/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pygame/</guid>
+      <description>Description Pygame is a module in python that is designed for creating 2D videogames. With pygame, I was able to create a game where a doctor visits different rooms and is able to see differnt visualizations of data in each room.
+Here is the data: Link Here</description>
+    </item>
+    
+    <item>
+      <title>To Do List</title>
+      <link>/projects/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/todo/</guid>
+      <description>[ ] Get an Internship
+[ ] Create a project using NLP [X] Random Forest [X] Logistic Regression
+[X] Linear Regression
+[X] Create a Blog in R
+[X] Create a Game to Visualize Data</description>
+    </item>
+    
+  </channel>
+</rss>

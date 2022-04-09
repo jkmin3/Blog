@@ -1,0 +1,126 @@
+---
+title: "EDA on Amazon Books"
+description: "I will be utilizing my skills in ggplot and showing you some of the things I can do in R"
+type: post
+date: 2022-03-06
+tags: ["ggplot", "R"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, results = 'hide', include=FALSE}
+library(tidyverse)
+library(readr)
+library(ggridges)
+```
+
+```{r, results='hide', include=FALSE}
+books <- read_csv(file = "bestsellers.csv")
+```
+
+## Data
+
+The data I have loaded in is called Amazon's Top 50 Selling Books from 2009-2019. Here is a look at the data.
+
+```{r, echo=FALSE}
+glimpse(books)
+summary(books)
+```
+
+## Visualizations
+
+Lets take a look at the prices of the books according to genre.
+
+```{r, echo=FALSE}
+ggplot(books, aes(
+  x = Price,
+  fill = Genre
+)) +
+  geom_density(
+    adjust = 2,
+    alpha = 0.5
+  ) +
+  labs(
+    x = "Price",
+    y = "Density",
+    title = "Price",
+    fill = "Genre"
+  )
+```
+
+The graph above looks like they sell the books for about the same price. Now we will take a look at the relationship between User Rating and Genre.
+
+```{r, echo=FALSE}
+ggplot(books, aes(
+  x = `User Rating`,
+  fill = Genre 
+)) +
+  geom_bar(
+  ) 
+```
+
+```{r, echo=FALSE}
+ggplot(books, aes(
+  x = `User Rating`,
+  fill = Genre
+)) +
+  geom_bar(
+    position="fill"
+  ) 
+```
+
+```{r}
+ggplot(books, aes(
+  x= Price,
+  y = Genre,
+  fill= Genre, 
+  color=Genre)) +
+  geom_density_ridges(alpha = 0.5)
+```
+
+## Data Arranging
+
+Lets take a look at the highest ratings in the dataset, the authors with 4.9 and above. 
+
+```{r, echo=FALSE}
+top <- books %>%
+  filter(
+    `User Rating` >= 4.9
+  ) %>%
+  select(Author, `User Rating`, Reviews)
+top
+```
+We will take a look at who has the most highest rated books and no surprise it is Dr. Seuss.
+```{r, echo=FALSE}
+top %>%
+  count(Author) %>%
+  arrange(desc(n))
+```
+
+I am also curious to see who has the most books in the top 50, so let's take a look at that.
+
+```{r, echo=FALSE}
+books %>%
+  count(Author) %>%
+  arrange(desc(n))
+```
+
+We can see the more popular authors from reviews.
+
+```{r}
+ggplot(top, aes(
+  y = Author,
+  fill = Reviews)) +
+  geom_bar(position = "fill") +
+  labs(
+    x = "Proportion",
+    y = "Author",
+    fill = "Review",
+    title = "Review Frequency of Top Authors"
+  )
+```
+
+
+

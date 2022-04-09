@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>EDA on Amazon Books</title>
+    <meta name="description" content="I will be utilizing my skills in ggplot and showing you some of the things I can do in R">
+    <meta name="keywords" content='blog, gokarna, hugo, ggplot, R'>
+
+    <meta property="og:url" content="/posts/eda/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EDA on Amazon Books">
+    <meta property="og:description" content="I will be utilizing my skills in ggplot and showing you some of the things I can do in R">
+    <meta property="og:image" content="/images/professional.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EDA on Amazon Books">
+    <meta name="twitter:description" content="I will be utilizing my skills in ggplot and showing you some of the things I can do in R">
+    <meta property="twitter:domain" content="/posts/eda/">
+    <meta property="twitter:url" content="/posts/eda/">
+    <meta name="twitter:image" content="/images/professional.jpeg">
+
+    
+    <link rel="canonical" href="/posts/eda/" />
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="/css/dark.css">
+
+    <script src="/js/svg-injector.min.js"></script>
+    <script src="/js/feather-icons.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.css" integrity="sha384-6LkG2wmY8FK9E0vU9OOr8UvLwsaqUg9SETfpq4uTCN1agNe8HRdE9ABlk+fVx6gZ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.js" integrity="sha384-31El76TwmbHj4rF9DyLsygbq6xoIobG0W+jqXim+a3dU9W53tdH3A/ngRPxOzzaB" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="/">
+                <img src="/images/professional.jpeg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="/">Joshua K. Min</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="/"> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/projects/"> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="/"> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/projects/"> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>EDA on Amazon Books</h1>
+        <small role="doc-subtitle">I will be utilizing my skills in ggplot and showing you some of the things I can do in R</small>
+        <p class="post-date">
+            March 6, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="/tags/ggplot">ggplot</a></li>
+        
+            <li class="post-tag"><a href="/tags/r">R</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>The data I have loaded in is called Amazon’s Top 50 Selling Books from 2009-2019. Here is a look at the data.</p>
+<pre><code>## Rows: 550
+## Columns: 7
+## $ Name          &lt;chr&gt; &quot;10-Day Green Smoothie Cleanse&quot;, &quot;11/22/63: A Novel&quot;, &quot;1…
+## $ Author        &lt;chr&gt; &quot;JJ Smith&quot;, &quot;Stephen King&quot;, &quot;Jordan B. Peterson&quot;, &quot;Georg…
+## $ `User Rating` &lt;dbl&gt; 4.7, 4.6, 4.7, 4.7, 4.8, 4.4, 4.7, 4.7, 4.7, 4.6, 4.6, 4…
+## $ Reviews       &lt;dbl&gt; 17350, 2052, 18979, 21424, 7665, 12643, 19735, 19699, 59…
+## $ Price         &lt;dbl&gt; 8, 22, 15, 6, 12, 11, 30, 15, 3, 8, 8, 2, 32, 5, 17, 4, …
+## $ Year          &lt;dbl&gt; 2016, 2011, 2018, 2017, 2019, 2011, 2014, 2017, 2018, 20…
+## $ Genre         &lt;chr&gt; &quot;Non Fiction&quot;, &quot;Fiction&quot;, &quot;Non Fiction&quot;, &quot;Fiction&quot;, &quot;Non…</code></pre>
+<pre><code>##      Name              Author           User Rating       Reviews     
+##  Length:550         Length:550         Min.   :3.300   Min.   :   37  
+##  Class :character   Class :character   1st Qu.:4.500   1st Qu.: 4058  
+##  Mode  :character   Mode  :character   Median :4.700   Median : 8580  
+##                                        Mean   :4.618   Mean   :11953  
+##                                        3rd Qu.:4.800   3rd Qu.:17253  
+##                                        Max.   :4.900   Max.   :87841  
+##      Price            Year         Genre          
+##  Min.   :  0.0   Min.   :2009   Length:550        
+##  1st Qu.:  7.0   1st Qu.:2011   Class :character  
+##  Median : 11.0   Median :2014   Mode  :character  
+##  Mean   : 13.1   Mean   :2014                     
+##  3rd Qu.: 16.0   3rd Qu.:2017                     
+##  Max.   :105.0   Max.   :2019</code></pre>
+</div>
+<div id="visualizations" class="section level2">
+<h2>Visualizations</h2>
+<p>Lets take a look at the prices of the books according to genre.</p>
+<p><img src="/posts/EDA_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The graph above looks like they sell the books for about the same price. Now we will take a look at the relationship between User Rating and Genre.</p>
+<p><img src="/posts/EDA_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/posts/EDA_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(books, aes(
+  x= Price,
+  y = Genre,
+  fill= Genre, 
+  color=Genre)) +
+  geom_density_ridges(alpha = 0.5)</code></pre>
+<pre><code>## Picking joint bandwidth of 1.75</code></pre>
+<p><img src="/posts/EDA_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="data-arranging" class="section level2">
+<h2>Data Arranging</h2>
+<p>Lets take a look at the highest ratings in the dataset, the authors with 4.9 and above.</p>
+<pre><code>## # A tibble: 52 × 3
+##    Author               `User Rating` Reviews
+##    &lt;chr&gt;                        &lt;dbl&gt;   &lt;dbl&gt;
+##  1 Bill Martin Jr.                4.9   14344
+##  2 Bill Martin Jr.                4.9   14344
+##  3 Dav Pilkey                     4.9    5062
+##  4 Dav Pilkey                     4.9    4786
+##  5 Dav Pilkey                     4.9    7235
+##  6 Dav Pilkey                     4.9    7235
+##  7 Dav Pilkey                     4.9   12619
+##  8 Dav Pilkey                     4.9    9089
+##  9 Dav Pilkey                     4.9    5470
+## 10 Sherri Duskey Rinker           4.9    7038
+## # … with 42 more rows</code></pre>
+<p>We will take a look at who has the most highest rated books and no surprise it is Dr. Seuss.</p>
+<pre><code>## # A tibble: 20 × 2
+##    Author                    n
+##    &lt;chr&gt;                 &lt;int&gt;
+##  1 Dr. Seuss                 8
+##  2 Dav Pilkey                7
+##  3 Eric Carle                7
+##  4 Sarah Young               6
+##  5 Emily Winfield Martin     4
+##  6 J.K. Rowling              3
+##  7 Bill Martin Jr.           2
+##  8 Rush Limbaugh             2
+##  9 Sherri Duskey Rinker      2
+## 10 Alice Schertle            1
+## 11 Brandon Stanton           1
+## 12 Chip Gaines               1
+## 13 J. K. Rowling             1
+## 14 Jeff Kinney               1
+## 15 Jill Twiss                1
+## 16 Lin-Manuel Miranda        1
+## 17 Mark R. Levin             1
+## 18 Nathan W. Pyle            1
+## 19 Patrick Thorpe            1
+## 20 Pete Souza                1</code></pre>
+<p>I am also curious to see who has the most books in the top 50, so let’s take a look at that.</p>
+<pre><code>## # A tibble: 248 × 2
+##    Author                                 n
+##    &lt;chr&gt;                              &lt;int&gt;
+##  1 Jeff Kinney                           12
+##  2 Gary Chapman                          11
+##  3 Rick Riordan                          11
+##  4 Suzanne Collins                       11
+##  5 American Psychological Association    10
+##  6 Dr. Seuss                              9
+##  7 Gallup                                 9
+##  8 Rob Elliott                            8
+##  9 Bill O&#39;Reilly                          7
+## 10 Dav Pilkey                             7
+## # … with 238 more rows</code></pre>
+<p>We can see the more popular authors from reviews.</p>
+<pre class="r"><code>ggplot(top, aes(
+  y = Author,
+  fill = Reviews)) +
+  geom_bar(position = &quot;fill&quot;) +
+  labs(
+    x = &quot;Proportion&quot;,
+    y = &quot;Author&quot;,
+    fill = &quot;Review&quot;,
+    title = &quot;Review Frequency of Top Authors&quot;
+  )</code></pre>
+<p><img src="/posts/EDA_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2022 Joshua Min</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
