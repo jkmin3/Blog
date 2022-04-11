@@ -16,6 +16,17 @@
     </item>
     
     <item>
+      <title>Email Classification</title>
+      <link>/projects/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/email/</guid>
+      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
+The dataset is here:
+Link Here</description>
+    </item>
+    
+    <item>
       <title>Fetus Health Classification</title>
       <link>/projects/fetus_health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -61,18 +72,11 @@ Click here for the Source Code</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/machine_learning/</guid>
-      <description>Projects using Machine Learning Fetus Health Classification Predicted Outcome of League of Legends Game Predicted Life Expectancy of Countries Visualized Data Through a Game</description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>/projects/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/email/</guid>
-      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
-The dataset is here:
-Link Here</description>
+      <description>Projects using Machine Learning Fetus Health Classification
+Predicted Outcome of League of Legends Game
+Predicted Life Expectancy of Countries
+Visualized Data Through a Game
+Email Classification</description>
     </item>
     
     <item>

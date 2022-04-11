@@ -6,7 +6,16 @@
     <description>Recent content on Joshua K. Min</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 10 Best Spots to Study at UIUC</title>
+      <link>/articles/study/</link>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/articles/study/</guid>
+      <description>As a student who studies everyday and enjoys a variety of different types of study environments, I believe that I have one of the best top 10s list. I have been to over 30 different locations in the Champaign-Urbana area to study and I will be giving you my favorites. In this list, I will be giving you the description and vibe of each study environment. I will also give each of them a how-loud-you-can-be scale from 1-10.</description>
+    </item>
+    
     <item>
       <title>EDA on Amazon Books</title>
       <link>/posts/eda/</link>
@@ -33,6 +42,17 @@
       
       <guid>/projects/ann/</guid>
       <description>Projects using Deep Learning Coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Email Classification</title>
+      <link>/projects/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/email/</guid>
+      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
+The dataset is here:
+Link Here</description>
     </item>
     
     <item>
@@ -81,18 +101,11 @@ Click here for the Source Code</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/machine_learning/</guid>
-      <description>Projects using Machine Learning Fetus Health Classification Predicted Outcome of League of Legends Game Predicted Life Expectancy of Countries Visualized Data Through a Game</description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>/projects/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/email/</guid>
-      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
-The dataset is here:
-Link Here</description>
+      <description>Projects using Machine Learning Fetus Health Classification
+Predicted Outcome of League of Legends Game
+Predicted Life Expectancy of Countries
+Visualized Data Through a Game
+Email Classification</description>
     </item>
     
     <item>
