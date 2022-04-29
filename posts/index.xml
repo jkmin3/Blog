@@ -17,14 +17,5 @@
 ## Rows: 550 ## Columns: 7 ## $ Name &amp;lt;chr&amp;gt; &amp;quot;10-Day Green Smoothie Cleanse&amp;quot;, &amp;quot;11/22/63: A Novel&amp;quot;, &amp;quot;1… ## $ Author &amp;lt;chr&amp;gt; &amp;quot;JJ Smith&amp;quot;, &amp;quot;Stephen King&amp;quot;, &amp;quot;Jordan B. Peterson&amp;quot;, &amp;quot;Georg… ## $ `User Rating` &amp;lt;dbl&amp;gt; 4.7, 4.6, 4.7, 4.7, 4.8, 4.4, 4.7, 4.7, 4.7, 4.6, 4.</description>
     </item>
     
-    <item>
-      <title>Resume</title>
-      <link>/posts/resume/</link>
-      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/resume/</guid>
-      <description>Download Resume Here Download</description>
-    </item>
-    
   </channel>
 </rss>
