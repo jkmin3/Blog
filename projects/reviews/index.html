@@ -17,25 +17,25 @@
     
 
     
-    <title>To Do List</title>
+    <title>Breadsmith Reviews</title>
     <meta name="description" content="Aspiring Data Scientist">
     <meta name="keywords" content='blog, gokarna, hugo'>
 
-    <meta property="og:url" content="/projects/todo/">
+    <meta property="og:url" content="/projects/reviews/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="To Do List">
+    <meta property="og:title" content="Breadsmith Reviews">
     <meta property="og:description" content="Aspiring Data Scientist">
     <meta property="og:image" content="/images/professional.jpeg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="To Do List">
+    <meta name="twitter:title" content="Breadsmith Reviews">
     <meta name="twitter:description" content="Aspiring Data Scientist">
-    <meta property="twitter:domain" content="/projects/todo/">
-    <meta property="twitter:url" content="/projects/todo/">
+    <meta property="twitter:domain" content="/projects/reviews/">
+    <meta property="twitter:url" content="/projects/reviews/">
     <meta name="twitter:image" content="/images/professional.jpeg">
 
     
-    <link rel="canonical" href="/projects/todo/" />
+    <link rel="canonical" href="/projects/reviews/" />
 
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -165,20 +165,35 @@
     <div class="post container">
 
     <div class="post-header-section">
-        <h1>To Do List</h1>
+        <h1>Breadsmith Reviews</h1>
     </div>
 
     <div class="post-content">
         <p>
-            <p>[ ] Get an Internship<br>
-[ ] Create a project using NLP<br>
-[ ] Create a project using Deep Learning<br>
-[ ] Create a project using Image Processing<br>
-[X] Random Forest<br>
-[X] Logistic Regression<br>
-[X] Linear Regression<br>
-[X] Create a Blog in R<br>
-[X] Create a Game to Visualize Data</p>
+            <h1 id="breadsmith_reviews">Breadsmith_Reviews</h1>
+<p><a href="https://github.com/jkmin3/Breadsmith-Reviews">Github</a></p>
+<h3 id="the-data">The Data</h3>
+<p>My parents own a bakery that&rsquo;s a part of a small franchise called Breadsmith. I wanted to use some unique data that meant something to me, so I pulled the google reviews from my parent&rsquo;s Breadsmith store using an API. However, you are only allowed to pull 5 reviews if you are not the owner, so I had to get access as the owner and I was able to download the reviews, because the API seems to be broken or I can&rsquo;t figure it out. I tried for hours.</p>
+<h3 id="about-the-project">About The Project</h3>
+<p>With all of this interesting data, I wanted to grab a lot of useful insights from it using different kinds of sentiment analysis and a lot of EDA. The accuracy of the sentiment analysis wasn&rsquo;t all that great, because there were 73 reviews, but only 47 of them had any text. Also, 83 percent of that data had a positive sentiment and that was what all of the models&rsquo; accuracy were. Another challenge about this was that some of the reviews would talk greatly about the product, but poorly about the service and therefore gave it a 1 star, which obviously confused the model. However, although the models were no better than guessing, I was able to pull a lot of insight from this project.</p>
+<h3 id="nlp-libraries">NLP Libraries</h3>
+<ul>
+<li><a href="https://scikit-learn.org/stable/">Scikit Learn</a></li>
+<li><a href="https://www.nltk.org/">NLTK</a></li>
+<li><a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a></li>
+<li><a href="https://pypi.org/project/wordcloud/">WordCloud</a></li>
+<li><a href="https://spacy.io/">Spacy</a></li>
+<li><a href="https://keras.io/">Keras</a></li>
+</ul>
+<h3 id="acknowledgments">Acknowledgments</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OuNH5kT-aD0">What are Embedding Layers in Keras</a></li>
+<li><a href="https://towardsdatascience.com/aspect-based-sentiment-analysis-using-spacy-textblob-4c8de3e0d2b9">Aspect-Based Sentiment Analysis Using Spacy &amp; TextBlob</a></li>
+<li><a href="https://towardsdatascience.com/nlp-gaining-insights-from-text-reviews-94ef955c58c0">NLP: Gaining insights from text reviews</a></li>
+<li><a href="https://towardsdatascience.com/my-absolute-go-to-for-sentiment-analysis-textblob-3ac3a11d524">Sentiment Analysis using TextBlob</a></li>
+<li><a href="https://towardsdatascience.com/word-embeddings-for-sentiment-analysis-65f42ea5d26e">Word embeddings for sentiment analysis</a></li>
+<li><a href="https://www.kaggle.com/code/paoloripamonti/twitter-sentiment-analysis">Twitter Sentiment Analysis Notebook</a></li>
+</ul>
 
         </p>
     </div>

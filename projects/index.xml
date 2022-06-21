@@ -7,23 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Breadsmith Reviews</title>
+      <link>/projects/reviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/reviews/</guid>
+      <description>Breadsmith_Reviews Github
+The Data My parents own a bakery that&amp;rsquo;s a part of a small franchise called Breadsmith. I wanted to use some unique data that meant something to me, so I pulled the google reviews from my parent&amp;rsquo;s Breadsmith store using an API. However, you are only allowed to pull 5 reviews if you are not the owner, so I had to get access as the owner and I was able to download the reviews, because the API seems to be broken or I can&amp;rsquo;t figure it out.</description>
+    </item>
+    
+    <item>
       <title>Deep Learning/ANN (Artificial Neural Network)</title>
       <link>/projects/ann/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/ann/</guid>
       <description>Projects using Deep Learning Coming soon!</description>
-    </item>
-    
-    <item>
-      <title>Email Classification</title>
-      <link>/projects/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/email/</guid>
-      <description>In this project, I am going to be differentiating between spam emails and real ones using machine learning.
-The dataset is here:
-Link Here</description>
     </item>
     
     <item>
@@ -34,15 +33,6 @@ Link Here</description>
       <guid>/projects/fetus_health/</guid>
       <description>Fetus Health Dataset This dataset contained a variety of features on newborns and it had its classification of 1-Normal, 2-Suspect, 3-Pathological.
 Description I used many different models with scikit-learn to predict the outcome of the health of a fetus and ended up using a random forest. I got a result of a 94% accurate model using GridSearchCV to get the best parameters. The only problem is that the grid search take a while, so play around with it.</description>
-    </item>
-    
-    <item>
-      <title>Image Processing</title>
-      <link>/projects/imgs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/imgs/</guid>
-      <description>Projects using Image Processing Coming soon!</description>
     </item>
     
     <item>
@@ -76,7 +66,7 @@ Click here for the Source Code</description>
 Predicted Outcome of League of Legends Game
 Predicted Life Expectancy of Countries
 Visualized Data Through a Game
-Email Classification</description>
+Breadsmith Reviews Analysis</description>
     </item>
     
     <item>
@@ -96,23 +86,6 @@ Email Classification</description>
       <guid>/projects/pygame/</guid>
       <description>Description Pygame is a module in python that is designed for creating 2D videogames. With pygame, I was able to create a game where a doctor visits different rooms and is able to see differnt visualizations of data in each room.
 Here is the data: Link Here</description>
-    </item>
-    
-    <item>
-      <title>To Do List</title>
-      <link>/projects/todo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/todo/</guid>
-      <description>[ ] Get an Internship
-[ ] Create a project using NLP
-[ ] Create a project using Deep Learning
-[ ] Create a project using Image Processing
-[X] Random Forest
-[X] Logistic Regression
-[X] Linear Regression
-[X] Create a Blog in R
-[X] Create a Game to Visualize Data</description>
     </item>
     
   </channel>
